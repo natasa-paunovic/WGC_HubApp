@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_login"
+        tools:context=".activity.LoginActivity">
+
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:background="@drawable/orange_triangle"
+    android:layout_alignParentTop="true"
+               android:layout_alignParentLeft="true"
+    android:layout_marginTop="40dp"/>
+
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:background="@drawable/tirquose_triangle"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="60dp"/>
+
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:background="@drawable/pink_triangle"
+              android:layout_above="@id/ivHub"
+               android:layout_marginTop="10dp"
+               android:layout_alignParentRight="true"
+               />
+
+
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:layout_above="@+id/ivSignIn"
+               android:id="@+id/ivHub"
+               android:layout_marginLeft="17dp"
+               android:layout_marginBottom="20dp"
+               android:background="@drawable/hub"/>
+
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:layout_above="@+id/separator"
+               android:id="@+id/ivSignIn"
+               android:layout_marginLeft="17dp"
+               android:background="@drawable/sign_in"/>
+
+
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_centerVertical="true"
+          android:id="@+id/separator"/>
+
+    <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="17dp"
+            android:layout_marginTop="@dimen/margin_top_login_layout"
+            android:layout_below="@+id/ivSignIn"
+    >
+
+        <TextView
+                android:id="@+id/email_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:textColor="@color/gray2"
+                android:textSize="@dimen/text_13"
+                android:text="@string/email_address"/>
+
+        <EditText
+                android:id="@+id/emailEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_email_address"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/gray2o50"
+                android:textColor="@color/dark_blue"
+                android:textSize="@dimen/text_17"
+                android:background="@android:color/transparent"
+                android:maxLines="1"
+                android:layout_marginTop="13dp"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray3"
+                android:layout_marginTop="3dp"/>
+
+        <TextView
+                android:id="@+id/password_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:textColor="@color/gray2"
+                android:textSize="@dimen/text_13"
+                android:text="@string/password"
+                android:layout_marginTop="30dp"/>
+
+        <EditText
+                android:id="@+id/passwordEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/gray2o50"
+                android:textColor="@color/dark_blue"
+                android:textSize="@dimen/text_17"
+                android:background="@android:color/transparent"
+                android:maxLines="1"
+                android:layout_marginTop="13dp"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray3"
+                android:layout_marginTop="3dp"/>
+
+        <TextView
+                android:id="@+id/forgotPasswordText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgot_password"
+                android:textColor="@color/my_sin"
+                android:textSize="@dimen/text_13"
+                android:fontFamily="@string/font_family_medium"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:visibility="invisible"
+                android:layout_gravity="center"/>
+
+        <ImageButton
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@string/font_family_medium"
+                android:background="@drawable/signin_disable"
+        />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

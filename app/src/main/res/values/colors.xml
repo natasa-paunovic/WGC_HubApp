@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="white50">#80FFFFFF</color>
+    <color name="white70">#B3FFFFFF</color>
+    <color name="twilight_blue">#EEFEFF</color>
+    <color name="alabaster">#F9F9F9</color>
+    <color name="alto">#D8D8D8</color>
+    <color name="viking">#7bb9dd</color>
+    <color name="azure_radiance">#187AEC</color>
+    <color name="my_sin">#9D1666</color>
+    <color name="sunglow">#FECC2F</color>
+    <color name="yellow_sea">#F0AF00</color>
+    <color name="carrot_orange">#F5872B</color>
+    <color name="cloudy">#AFADAA</color>
+    <color name="abbey">#484849</color>
+    <color name="black">#000000</color>
+    <color name="black25">#40000000</color>
+    <color name="black2">#1D1D1D</color>
+    <color name="black3">#1E1E1E</color>
+    <color name="gray1">#939089</color>
+    <color name="gray2">#5b5b5b</color>
+    <color name="gray2o50">#80616057</color>
+    <color name="gray3">#CDCED3</color>
+    <color name="gray4">#979797</color>
+    <color name="search">#268E8E93</color>
+    <color name="facebook">#4460A0</color>
+    <color name="dark_blue">#231E44</color>
+</resources>
